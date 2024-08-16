@@ -1,0 +1,87 @@
+root - INFO - Flask application has started
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+root - INFO - Flask application has started
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+root - INFO - Flask application has started
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+root - INFO - Request inserted with id: 66b4fd1f2d47ca57623d634f
+werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 10:15:11] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+root - INFO - Request inserted with id: 66b4fd2f2d47ca57623d6350
+werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 10:15:27] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+root - INFO - Flask application has started
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+root - INFO - Request inserted with id: 66b4fe1f1d938762d8598a3e
+werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 10:19:27] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+root - INFO - Flask application has started
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+root - INFO - Flask application has started
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:41:46] "[33mGET /chemical/Water HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:41:52] "[33mGET /chemical/Vanillin HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:42:20] "[33mGET /chemical/p-Toluidine HTTP/1.1[0m" 404 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:48:29] "GET /chemical/p-Toluidine HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:48:37] "[33mGET /chemical/Water HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:48:39] "[33mGET /chemical/Water HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:48:45] "GET /chemical/Vanillin HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:50:51] "GET /chemical/C8 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 16:59:10] "GET /chemical/Vanillin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 17:00:20] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [15/Aug/2024 17:00:34] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
