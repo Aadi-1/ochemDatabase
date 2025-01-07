@@ -15,6 +15,13 @@ from datetime import datetime
 #USed to log time that client sends request
 from flask_cors import CORS
 
+from flask_mail import Mail, Message
+
+
+
+
+
+
 #Creating the FLASK app
 app = Flask(__name__, static_folder='static')
 CORS(app)
@@ -48,6 +55,22 @@ def get_chemical(query):
         return jsonify(chemical)
     else:
         return jsonify({"error": "No Chemical Found"}), 404
+    
+# Add the following route for suggestions
+@app.route('/chemical/suggestions/<query>', methods=['GET'])
+def get_suggestions(query):
+    try:
+        chemicals = collection.find(
+            {"name": {"$regex": query, "$options": "i"}},
+            {"_id": 0, "name": 1}  # Only fetch the chemical names
+        ).limit(7)  # Limit the suggestions to 5 results
+        suggestions = list(chemicals)  # Convert cursor to list
+        print("Suggestions sent to frontend:", suggestions)
+        return jsonify(suggestions), 200
+    except Exception as e:
+        logging.error(f"Error fetching suggestions: {e}")
+        return jsonify({"error": "Error fetching suggestions"}), 500
+
     
 
 @app.route('/chemical/request', methods=['POST'])
@@ -115,6 +138,9 @@ def handle_exception(error):
 def index():
     return send_from_directory(app.static_folder, 'index.html')
 # Define a route to serve the index.html file from the static folder when the root URL is accessed.
+
+
+
 
     
 #Running the app

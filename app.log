@@ -307,3 +307,469 @@ werkzeug - INFO -  * Restarting with stat
 werkzeug - WARNING -  * Debugger is active!
 werkzeug - INFO -  * Debugger PIN: 138-601-636
 werkzeug - INFO - 127.0.0.1 - - [31/Aug/2024 16:25:28] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:47:06] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:31] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:31] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:32] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:32] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:32] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:32] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:33] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:52:34] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:54:01] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:54:04] "[33mGET /chemical/sda HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:54:09] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:56:30] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 16:56:32] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Sep/2024 17:45:25] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Sep/2024 17:45:32] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Sep/2024 17:45:34] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Sep/2024 17:52:01] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:27] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:28] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:28] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:28] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:28] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:00:45] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:02:01] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:02:02] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:02:02] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:02:15] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:13:24] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:13:24] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:13:24] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:13:25] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:17:40] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:37] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:37] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:37] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:38] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:41] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:33:46] "GET /chemical/3-Nitrobenzamide HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:34:35] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:35:02] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:35:02] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:35:15] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 11:35:30] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 12:43:40] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [05/Sep/2024 12:43:40] "[31m[1mPOST /chemical/request HTTP/1.1[0m" 400 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:15:06] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:15:15] "GET /chemical/3-Nitrobenzamide HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:37:09] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:37:09] "[31m[1mPOST /chemical/request HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:38:26] "[33mPOST /chemical/request/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:38:56] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:39:11] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:39:38] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:47:07] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:47:07] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:58:38] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 12:58:38] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:22] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:29] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:31] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:37] "[33mGET /chemical/C2H4O2 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:46] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:52] "GET /chemical/c2%20h4%20o2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Sep/2024 13:02:53] "GET /chemical/c2%20h4%20o2 HTTP/1.1" 200 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [07/Sep/2024 16:57:04] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Sep/2024 17:06:36] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Sep/2024 17:06:36] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 138-601-636
+werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 15:25:26] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [31/Dec/2024 17:30:32] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [31/Dec/2024 17:36:48] "OPTIONS /chemical/request HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [31/Dec/2024 17:36:48] "[35m[1mPOST /chemical/request HTTP/1.1[0m" 201 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [02/Jan/2025 10:50:57] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Jan/2025 10:52:07] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Jan/2025 10:52:08] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Jan/2025 10:52:13] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Jan/2025 10:56:15] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:29:30] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:29:31] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:28] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:29] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:30] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:30] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:30] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:34] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:35] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:35] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:36:35] "[33mGET /chemical/suggestions/${query} HTTP/1.1[0m" 404 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:51] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:52] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:52] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:52] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:52] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:53] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:54] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:55] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:55] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:55] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:55] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:55] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:56] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:56] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:56] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:56] "[33mGET /chemical/acetic%20acif HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:57] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:57] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:57] "[33mGET /chemical/acetic%20acif HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:58] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:58] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:37:58] "GET /chemical/acetic%20acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:00] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:01] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:02] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:03] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:03] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:07] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:08] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:08] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:57] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:38:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:41:19] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:41:20] "GET /chemical/Ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:42:08] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:42:24] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:42:32] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:43:05] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:43:58] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:43:59] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:44:00] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:44:32] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:45:21] "GET /chemical/suggestions/Ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:47:29] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:47:29] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:49:09] "GET /chemical/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:57:03] "GET /chemical/suggestions/Ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 12:57:35] "GET /chemical/ace HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:00:20] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:00:20] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:04:23] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:04:59] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:04:59] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:05:37] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:05:39] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:05:40] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:05:54] "GET /chemical/Ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:06:00] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:06:01] "GET /chemical/suggestions/${query} HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:08:47] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:08:57] "GET /chemical/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:09:02] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:09:02] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:09:05] "GET /chemical/Acetonitrile HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:05] "GET /chemical/suggestions/ia HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:06] "GET /chemical/suggestions/ias HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:07] "GET /chemical/suggestions/iasa HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:09] "GET /chemical/suggestions/Ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:09] "GET /chemical/suggestions/Ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:10] "GET /chemical/suggestions/Ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:13] "GET /chemical/suggestions/At HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:13] "GET /chemical/suggestions/Ate HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:17] "GET /chemical/suggestions/At HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:19] "GET /chemical/suggestions/ar HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:21] "GET /chemical/suggestions/tr HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:22] "GET /chemical/suggestions/tre HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:22] "GET /chemical/suggestions/trew HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:22] "GET /chemical/suggestions/trews HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:23] "GET /chemical/suggestions/trew HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:10:27] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:12:21] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:12:22] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:12:58] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:12:58] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:19:11] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:19:11] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:45:42] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:45:42] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:46:45] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:46:45] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:47:54] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:47:54] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:48:31] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:48:31] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:48:41] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:48:41] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:48:44] "GET /chemical/Benzaldehyde%20dimethyl%20acetal HTTP/1.1" 200 -
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:49:49] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:49:51] "GET /chemical/suggestions/AC HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:49:51] "GET /chemical/suggestions/ACE HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:49:51] "GET /chemical/ACE HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 13:49:55] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:00] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:00] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:04] "GET /chemical/Benzaldehyde%20dimethyl%20acetal HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:09] "GET /chemical/suggestions/af HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:15] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:02:15] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:06:37] "GET /chemical/suggestions/ad HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:06:37] "GET /chemical/suggestions/ada HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:06:37] "GET /chemical/suggestions/adad HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:31] "GET /chemical/suggestions/sf HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:31] "GET /chemical/suggestions/sfa HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:32] "GET /chemical/suggestions/sfaf HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:34] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:34] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:34] "GET /chemical/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:49] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:50] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:50] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:51] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:51] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:52] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:52] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:07:55] "GET /chemical/Acetonitrile HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:08:47] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:40] "GET /chemical/suggestions/as HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:40] "GET /chemical/suggestions/asd HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:41] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:42] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:42] "GET /chemical/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:47] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:47] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:52] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:09:52] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:10:37] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:10:38] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:10:40] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:10:45] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:10:45] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:12:27] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:12:27] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:12:30] "GET /chemical/Ethyl%20acetate HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:13:56] "GET /chemical/suggestions/ds HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:13:56] "GET /chemical/suggestions/dsd HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:14:33] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:14:33] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:15:23] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:15:23] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:16:30] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:22:14] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:22:15] "GET /chemical/suggestions/AD HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:22:16] "GET /chemical/suggestions/AC HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 14:22:16] "GET /chemical/suggestions/ACE HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:29:31] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:29:32] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:30:27] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:36:39] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:36:39] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:37:35] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:37:36] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:39:18] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:10] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:10] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:11] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:11] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:14] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:19] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:19] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:21] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:21] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:44:22] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:09] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:13] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:14] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:14] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:16] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:36] "GET /chemical/suggestions/Acetic%20Aci HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:36] "GET /chemical/suggestions/Acetic%20Ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:36] "GET /chemical/suggestions/Acetic%20A HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:36] "GET /chemical/suggestions/Acetic HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:37] "GET /chemical/suggestions/Acetic HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:38] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:39] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:40] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:46:40] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:06] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:10] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:10] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:11] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:11] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:49:14] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:03] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:14] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:15] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:15] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:15] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:26] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:30] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:30] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:30] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Jan/2025 22:50:30] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:10:44] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:10:45] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:10:59] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:00] "GET /chemical/suggestions/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:00] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:25] "GET /chemical/suggestions/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:25] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:26] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:26] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:26] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:29] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:31] "GET /chemical/suggestions/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:11:31] "GET /chemical/C2%20H4%20O2 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:31:10] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 11:31:10] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:02:55] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:02:55] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:03:33] "[33mGET /chemical/suggestions/ace/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:03:34] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:03:34] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:12:16] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:12:17] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 13:12:50] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 17:56:25] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 17:56:26] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 17:57:16] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 17:57:21] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:00:48] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:00:48] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:00:58] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:00:59] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:07:19] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:07:20] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:07:24] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:07:24] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:18] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:20] "GET /chemical/suggestions/aca HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:21] "GET /chemical/suggestions/aca= HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:21] "GET /chemical/suggestions/aca=e HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:21] "GET /chemical/suggestions/aca= HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:21] "GET /chemical/suggestions/aca HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:22] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:08:22] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:09:20] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:09:24] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:09:24] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [04/Jan/2025 18:09:45] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:14] "GET /chemical/suggestions/be HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:38] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:38] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:43] "GET /chemical/suggestions/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:43] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:50] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:53] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:54] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:57] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:04:57] "GET /chemical/suggestions/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:10:09] "[33mGET /chemical/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:17:13] "GET /chemical/suggestions/be HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:35:24] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 17:35:24] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:31:56] "GET /chemical/suggestions/le HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:31:56] "GET /chemical/suggestions/lem HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:31:58] "GET /chemical/suggestions/lemo HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:31:58] "GET /chemical/suggestions/lemon HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:31:59] "GET /chemical/suggestions/lemoni HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:00] "GET /chemical/suggestions/lemonib HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:00] "GET /chemical/suggestions/lemoni HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:00] "GET /chemical/suggestions/lemonin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:01] "GET /chemical/suggestions/lemonine HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:01] "[33mGET /chemical/suggestions/lemonine/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:01] "GET /chemical/suggestions/lemonine HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/lemonin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/lemoni HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/lemon HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/lemo HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/lem HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:02] "GET /chemical/suggestions/le HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:05] "GET /chemical/suggestions/li HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:05] "GET /chemical/suggestions/lim HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:07] "GET /chemical/suggestions/li HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:14] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:14] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:24] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:26] "GET /chemical/suggestions/et HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [06/Jan/2025 23:32:26] "GET /chemical/suggestions/eth HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Jan/2025 12:55:06] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Jan/2025 12:59:55] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Jan/2025 12:59:55] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Jan/2025 13:00:43] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
