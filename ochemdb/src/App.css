@@ -1,0 +1,187 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+/* Overall container for the navigation bar */
+.nav {
+  background-color: grey; /* Set background color for the navbar */
+  color: white; /* Set text color */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between the site title and other items */
+  align-items: center; /* Center-align items vertically */
+  padding: 0 1rem; /* Add padding to the left and right */
+  gap: 1rem; /* Reduce spacing between navbar items */
+  position: relative; /* Allows positioning of child elements like the cart popup */
+}
+
+/* Styling for the site title */
+.site-title {
+  font-size: 2rem; /* Increase font size for emphasis */
+  margin-right: auto; /* Push other items to the right */
+}
+
+/* Unordered list for navigation links */
+.nav ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Arrange items in a row */
+  gap: 0.5rem; /* Reduce space between links */
+}
+
+/* Styling for navigation links */
+.nav a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+  height: 100%; /* Make links span the full height of the navbar */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center-align text vertically */
+  padding: 0.5rem; /* Add padding around text */
+}
+
+/* Active state for navigation links */
+.nav li:active {
+  background-color: rgb(23, 91, 91); /* Highlight active link */
+}
+
+/* Hover effect for navigation links */
+.nav li:hover {
+  background-color: #555; /* Slightly darker background on hover */
+}
+
+/* Container for the cart icon */
+.cart-icon-container {
+  position: relative; /* Allows positioning of the badge */
+  cursor: pointer; /* Change cursor to indicate clickability */
+  margin-left: 1rem; /* Add space between the cart and other items */
+}
+
+/* Styling for the cart icon */
+.cart-icon {
+  font-size: 1.5rem; /* Increase size for visibility */
+  position: relative; /* Allows positioning of the badge */
+}
+
+/* Styling for the cart badge */
+.cart-badge {
+  position: absolute; /* Position relative to the cart icon */
+  top: -5px; /* Position slightly above the icon */
+  right: -10px; /* Position to the right of the icon */
+  background-color: red; /* Red background to indicate urgency */
+  color: white; /* White text for contrast */
+  font-size: 0.75rem; /* Smaller font size for badge */
+  padding: 2px 5px; /* Add padding inside the badge */
+  border-radius: 50%; /* Make the badge circular */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Container for the cart popup */
+.cart-popup {
+  position: absolute; /* Position relative to the cart icon */
+  top: 100%; /* Place below the cart icon */
+  right: 0; /* Align to the right edge */
+  width: 300px; /* Increase width for better readability */
+  background-color: white; /* White background for contrast */
+  border: 1px solid #ccc; /* Light border for separation */
+  border-radius: 5px; /* Slight rounding of corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  z-index: 1000; /* Ensure popup appears above other elements */
+  padding: 10px; /* Add padding inside the popup */
+}
+
+/* Header inside the cart popup */
+.cart-popup h4 {
+  margin: 0 0 10px 0; /* Add spacing below the header */
+  font-size: 1.1rem; /* Slightly larger font size */
+  text-align: center; /* Center-align  text */
+}
+
+/* List inside the cart popup */
+.cart-popup ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  max-height: 300px; /* Increase height for scrollable content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: block;
+}
+
+/* Individual items in the cart */
+.cart-popup .cart-item {
+  display: flex; /* Stack items vertically */
+  justify-content: space-between;
+  padding: 10px 0; /* Add spacing between items */
+  border-bottom: 1px solid #eee; /* Add a light divider between items */
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition for background and text color */
+}
+
+.cart-popup .cart-item:hover {
+  background-color: #57a3e5; /* Light blue background on hover */
+  color: #000000; /* Navy text color on hover */
+}
+
+.cart-popup .cart-item span {
+  flex: 1;
+  display: block; /* Make the chemical name occupy its own line */
+  margin-bottom: 5px; /* Add some space below the name */
+}
+
+/* "Remove" button inside the cart */
+.cart-popup .cart-item button {
+  background-color: rgb(228, 119, 119); /* Red background for emphasis */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slight rounding of corners */
+  padding: 5px 5px; /* Add consistent padding for all buttons */
+  width: 70px; /* Set a fixed width for all buttons */
+  height: 30px; /* Set a fixed height for all buttons */
+  cursor: pointer; /* Change cursor to indicate clickability */
+  display: block;
+  margin-left: 10px;
+}
+
+/* Hover effect for "Remove" button */
+.cart-popup .cart-item button:hover {
+  background-color: rgb(207, 14, 14); /* Darker red on hover */
+}
+
+/* Middle section styling for alignment */
+.middle {
+  margin-top: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for safety text */
+.safety {
+  text-align: left; /* Align text to the left */
+}
+
