@@ -15,6 +15,7 @@ function SearchBar({ onSearch }) {
       fetch(`http://127.0.0.1:5000/chemical/suggestions/${query}`)
         .then((response) => response.json())
         .then((data) => {
+          console.log("Fetched data:", data);
           if (Array.isArray(data)) {
             setSuggestions(data);
           } else {
@@ -60,10 +61,38 @@ function SearchBar({ onSearch }) {
     setSuggestions([]);
   };
 
-  const handleAddToCart = (chemical) => {
-    if (!addedChemicals.has(chemical.name)) {
-      addToCart(chemical); // Add chemical to cart
-      setAddedChemicals((prev) => new Set(prev).add(chemical.name)); // Mark as added
+  const handleAddToCart = async (chemical) => {
+    try {
+      console.log("Fetching details for chemical:", chemical.name);
+
+      // Fetch full chemical details from the backend
+      const response = await fetch(
+        `http://127.0.0.1:5000/chemical/${encodeURIComponent(chemical.name)}`
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch chemical details");
+      }
+
+      const fullDetails = await response.json();
+      console.log("Full chemical details fetched:", fullDetails);
+
+      // Prepare the chemical with full properties
+      const chemicalWithProperties = {
+        name: fullDetails.name || "N/A",
+        molecular_weight:
+          fullDetails.molWeight || fullDetails.molecular_weight || "N/A", // Correct key
+        density: fullDetails.Density || fullDetails.density || "N/A", // Correct key
+        melting_boiling_point: `${fullDetails.meltingPoint || "N/A"} / ${
+          fullDetails.boilingPoint || "N/A"
+        }`, // Combine melting/boiling
+        hazards: fullDetails.Safety || [], // Combine array of hazards
+      };
+
+      // Add the full details to the cart
+      console.log("Passing to addToCart:", chemicalWithProperties);
+      addToCart(chemicalWithProperties);
+    } catch (error) {
+      console.error("Error adding chemical to cart:", error);
     }
   };
 

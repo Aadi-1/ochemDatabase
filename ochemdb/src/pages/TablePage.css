@@ -1,0 +1,56 @@
+.table-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .chemical-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .chemical-table th,
+  .chemical-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .chemical-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .chemical-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .chemical-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .chemical-table td {
+    vertical-align: top;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

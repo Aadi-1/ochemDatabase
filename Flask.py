@@ -1,9 +1,12 @@
 #1 Import all required libraries
-from flask import Flask, jsonify, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory, request, send_file
 #Flask is used to create main class for app
 #Jsonify is used to send responses to client, converts python dict to json
 #request is an object that has all data sent from a client to a server
 #SFD is used to send a file from a directory
+
+
+import os
 
 from pymongo import MongoClient
 #Pymongo library, Mongo Client connects to MongoDB
@@ -17,6 +20,7 @@ from flask_cors import CORS
 
 from flask_mail import Mail, Message
 
+from ochemdb.table_routes import table_routes
 
 
 
@@ -24,7 +28,9 @@ from flask_mail import Mail, Message
 
 #Creating the FLASK app
 app = Flask(__name__, static_folder='static')
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+app.register_blueprint(table_routes)
 
 #Creating log file
 logging.basicConfig(filename= 'app.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s')
@@ -61,11 +67,17 @@ def get_chemical(query):
 def get_suggestions(query):
     try:
         chemicals = collection.find(
-            {"name": {"$regex": query, "$options": "i"}},
-            {"_id": 0, "name": 1}  # Only fetch the chemical names
-        ).limit(7)  # Limit the suggestions to 5 results
+    {"name": {"$regex": query, "$options": "i"}},
+    {
+        "_id": 0,
+        "name": 1,
+        "molecular_weight": 1,
+        "density": 1,
+        "melting_boiling_point": 1,
+        "hazards": 1,
+    }
+).limit(7)
         suggestions = list(chemicals)  # Convert cursor to list
-        print("Suggestions sent to frontend:", suggestions)
         return jsonify(suggestions), 200
     except Exception as e:
         logging.error(f"Error fetching suggestions: {e}")
@@ -139,6 +151,7 @@ def index():
     return send_from_directory(app.static_folder, 'index.html')
 # Define a route to serve the index.html file from the static folder when the root URL is accessed.
 
+print(app.url_map)
 
 
 

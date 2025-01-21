@@ -6,6 +6,7 @@ import RequestChemical from "./pages/RequestChemical";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useCart } from "./CartContext";
+import table from "./pages/table.js";
 
 function Cart() {
   const { cart, removeFromCart } = useCart();
@@ -26,6 +27,8 @@ function App() {
     case "/request":
       Component = RequestChemical;
       break;
+    case "/table":
+      Component = table;
   }
 
   return (

@@ -7,6 +7,38 @@ export default function NavBar() {
 
   const toggleCart = () => setShowCart((prev) => !prev); // Toggle cart visibility
 
+  const generateTable = async () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty. Add items before generating a table.");
+      return;
+    }
+    try {
+      const response = await fetch("http://127.0.0.1:5000/generate-table", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ cart }), // Send the cart data to the backend
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate the table.");
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "chemicals_table.xlsx"; // File name for the download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error generating table:", error);
+      alert("Failed to generate the table. Please try again.");
+    }
+  };
+
   return (
     <nav className="nav">
       <a href="/" className="site-title">
@@ -16,6 +48,7 @@ export default function NavBar() {
         <CustomLink href="/about">About</CustomLink>
         <CustomLink href="/instructions">Instructions</CustomLink>
         <CustomLink href="/request">Request A Chemical</CustomLink>
+        <CustomLink href="/table">Generate Table</CustomLink>
       </ul>
       {/* Cart Icon Section */}
       <div className="cart-icon-container">
