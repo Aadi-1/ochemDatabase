@@ -20,6 +20,12 @@ body {
   margin: 0;
 }
 
+/* Styling for the site title */
+.site-title {
+  font-size: 2rem; /* Increase font size for emphasis */
+  margin-right: auto; /* Push other items to the right */
+}
+
 /* Overall container for the navigation bar */
 .nav {
   background-color: grey; /* Set background color for the navbar */
@@ -32,11 +38,7 @@ body {
   position: relative; /* Allows positioning of child elements like the cart popup */
 }
 
-/* Styling for the site title */
-.site-title {
-  font-size: 2rem; /* Increase font size for emphasis */
-  margin-right: auto; /* Push other items to the right */
-}
+
 
 /* Unordered list for navigation links */
 .nav ul {

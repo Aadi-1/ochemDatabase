@@ -4,38 +4,45 @@ import { useCart } from "./CartContext";
 
 function SearchBar({ onSearch }) {
   const { cart, addToCart } = useCart();
-  const [query, SetQuery] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
-  const [selectedChemical, setSelectedChemical] = useState("");
+  const [query, SetQuery] = useState(""); // State for the input value
+  const [suggestions, setSuggestions] = useState([]); // State for suggestions list
+  const [selectedChemical, setSelectedChemical] = useState(""); // Track the selected chemical
   const [addedChemicals, setAddedChemicals] = useState(new Set()); // Track added chemicals
-  const suggestionsRef = useRef(null);
+  const [preventFetch, setPreventFetch] = useState(false); // Flag to prevent fetching
+  const suggestionsRef = useRef(null); // Ref to handle click outside
 
+  // Fetch suggestions from the backend when query changes
   useEffect(() => {
+    if (preventFetch) {
+      console.log("Preventing fetch due to suggestion click");
+      setPreventFetch(false); // Reset the flag for future queries
+      return; // Exit early
+    }
+
+    console.log("Query changed, fetching suggestions:", query);
     if (query.length > 1) {
       fetch(`http://127.0.0.1:5000/chemical/suggestions/${query}`)
         .then((response) => response.json())
         .then((data) => {
           console.log("Fetched data:", data);
-          if (Array.isArray(data)) {
-            setSuggestions(data);
-          } else {
-            setSuggestions([]);
-          }
+          setSuggestions(Array.isArray(data) ? data : []);
         })
         .catch((error) => {
-          console.error("Error fetching Suggestions:", error);
+          console.error("Error fetching suggestions:", error);
         });
     } else {
-      setSuggestions([]);
+      setSuggestions([]); // Clear suggestions for short queries
     }
   }, [query]);
 
+  // Hide suggestions when clicking outside the component
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
         suggestionsRef.current &&
         !suggestionsRef.current.contains(event.target)
       ) {
+        console.log("Clicked outside, clearing suggestions");
         setSuggestions([]); // Hide suggestions
       }
     };
@@ -48,17 +55,21 @@ function SearchBar({ onSearch }) {
 
   const handleSearch = () => {
     if (selectedChemical) {
-      onSearch(selectedChemical);
+      onSearch(selectedChemical); // Trigger search for selected chemical
     } else {
-      onSearch(query);
+      onSearch(query); // Trigger search for typed query
     }
+    setSuggestions([]); // Clear suggestions
   };
 
   const handleSuggestionClick = (chemical) => {
+    console.log("Clicked suggestion, clearing suggestions:", chemical.name);
+    setPreventFetch(true);
     setSelectedChemical(chemical.name);
     SetQuery(chemical.name);
+    setSuggestions([]); // Clear suggestions
+    console.log("Suggestions cleared after click");
     onSearch(chemical.name);
-    setSuggestions([]);
   };
 
   const handleAddToCart = async (chemical) => {
@@ -91,6 +102,7 @@ function SearchBar({ onSearch }) {
       // Add the full details to the cart
       console.log("Passing to addToCart:", chemicalWithProperties);
       addToCart(chemicalWithProperties);
+      setAddedChemicals((prev) => new Set(prev).add(chemical.name)); // Mark the chemical as added
     } catch (error) {
       console.error("Error adding chemical to cart:", error);
     }
@@ -98,7 +110,7 @@ function SearchBar({ onSearch }) {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      handleSearch();
+      handleSearch(); // Trigger search on Enter
     }
   };
 
@@ -106,16 +118,16 @@ function SearchBar({ onSearch }) {
     <div className="search-bar-container">
       <input
         type="text"
-        value={selectedChemical || query}
+        value={selectedChemical || query} // Show selected chemical or query
         onChange={(e) => {
-          SetQuery(e.target.value);
-          setSelectedChemical("");
+          SetQuery(e.target.value); // Update query when typing
+          setSelectedChemical(""); // Clear selected chemical when typing
         }}
-        onKeyDown={handleKeyDown}
+        onKeyDown={handleKeyDown} // Handle Enter key
         placeholder="Search for Chemical"
       />
       {suggestions.length > 0 && (
-        <ul className="suggestions-list">
+        <ul className="suggestions-list" ref={suggestionsRef}>
           {suggestions.map((chemical, index) => (
             <li key={index}>
               <span onClick={() => handleSuggestionClick(chemical)}>

@@ -1,11 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
 import SearchBar from "../SearchBar";
-import logo from "../pictures/OChemDB.png";
+import "./Home.css"; // Import the updated CSS
+import "./theme.css";
+import { useCart } from "../CartContext";
 
 export default function Home() {
   const [chemical, setChemical] = useState(null);
   const [error, setError] = useState(null);
+  const { addToCart } = useCart();
 
   const handleSearch = async (query) => {
     try {
@@ -13,9 +16,6 @@ export default function Home() {
         `http://127.0.0.1:5000/chemical/${query}`
       );
       console.log("API Response:", response.data);
-      console.log("Chemical object:", chemical);
-      console.log("Density:", chemical?.density);
-      console.log("Safety: ", chemical?.safety);
       setChemical(response.data);
       setError(null);
     } catch (err) {
@@ -25,34 +25,67 @@ export default function Home() {
   };
 
   return (
-    <>
-      <div className="searchbar">
-        <h2 className="title">OChem Database</h2>
+    <div className="home-container">
+      {/* Search bar */}
+      <div className="search-section">
+        <h1 className="title">OChem Database</h1>
         <SearchBar onSearch={handleSearch} />
-        {error && <p>{error}</p>}
-        {chemical && (
-          <div>
-            <h2>{chemical.name}</h2>
-            <p>Formula: {chemical.formula}</p>
-            <p>Molecular Weight: {chemical.molWeight}</p>
-            <p>Melting Point: {chemical.meltingPoint}</p>
-            <p>Boiling Point: {chemical.boilingPoint}</p>
-            <p>Density: {chemical.Density}</p>
-            <p className="safety">
-              Safety:{" "}
-              {Array.isArray(chemical.Safety) && chemical.Safety.length > 0 ? (
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: chemical.Safety.join("<br />"),
-                  }}
-                />
-              ) : (
-                "Not Available"
-              )}
-            </p>
-          </div>
-        )}
+        {error && <p className="error">{error}</p>}
       </div>
-    </>
+
+      {/* Chemical details card */}
+      {chemical && (
+        <div className="chemical-card">
+          <h2>{chemical.name}</h2>
+          <p className="info">
+            <span>Formula:</span> {chemical.formula}
+          </p>
+          <p className="info">
+            <span>Molecular Weight:</span> {chemical.molWeight} g/mol
+          </p>
+          <p className="info">
+            <span>Melting Point:</span> {chemical.meltingPoint}
+          </p>
+          <p className="info">
+            <span>Boiling Point:</span> {chemical.boilingPoint}
+          </p>
+          <p className="info">
+            <span>Density:</span> {chemical.Density}
+          </p>
+          <div className="safety">
+            <h3>Safety Information:</h3>
+            {Array.isArray(chemical.Safety) && chemical.Safety.length > 0 ? (
+              <ul>
+                {chemical.Safety.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>Not Available</p>
+            )}
+          </div>
+          <button
+            className="cart-card-button"
+            onClick={() => {
+              const formattedChemical = {
+                name: chemical.name || "N/A",
+                molecular_weight: chemical.molWeight || "N/A", // Map molWeight -> molecular_weight
+                density: chemical.Density || "N/A", // Map Density -> density
+                melting_boiling_point: `${chemical.meltingPoint || "N/A"} / ${
+                  chemical.boilingPoint || "N/A"
+                }`, // Combine meltingPoint and boilingPoint
+                hazards: chemical.Safety || [], // Map Safety -> hazards
+              };
+
+              console.log("Formatted chemical for cart:", formattedChemical); // Debug log
+              addToCart(formattedChemical); // Pass the formatted object
+            }}
+            title="Add to Cart"
+          >
+            +
+          </button>
+        </div>
+      )}
+    </div>
   );
 }
