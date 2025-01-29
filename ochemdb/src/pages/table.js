@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./TablePage.css"; // Add styles for the table
 import { useCart } from "../CartContext";
@@ -30,6 +30,10 @@ export default function TablePage() {
     setLoading(false);
   };
 
+  useEffect(() => {
+    generateTable();
+  }, []);
+
   // Handle changes to editable fields
   const handleFieldChange = (index, field, value) => {
     const updatedTableData = [...tableData];
@@ -39,20 +43,29 @@ export default function TablePage() {
 
   // Download table as Excel
   const downloadTable = async () => {
+    if (tableData.length === 0) {
+      alert("No table data to download!");
+      return;
+    }
+
     try {
       const response = await axios.post(
         "http://127.0.0.1:5000/export-table",
         tableData,
-        { responseType: "blob" }
+        { responseType: "blob" } // Ensure file response type
       );
-      const url = window.URL.createObjectURL(new Blob([response.data]));
+
+      const blob = new Blob([response.data], { type: "application/pdf" });
+      const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", "ChemicalTable.xlsx");
+      link.setAttribute("download", "ChemicalTable.pdf"); // Set filename
       document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);
     } catch (error) {
       console.error("Error exporting table:", error);
+      alert("Failed to download table.");
     }
   };
 
@@ -114,7 +127,9 @@ export default function TablePage() {
               ))}
             </tbody>
           </table>
-          <button onClick={downloadTable}>Download Table</button>
+          <button onClick={downloadTable} className="download-table-button">
+            Download Table as PDF
+          </button>
         </div>
       )}
     </div>

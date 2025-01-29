@@ -1,6 +1,10 @@
-from flask import Blueprint, jsonify, request, send_file
-import pandas as pd
+from flask import Blueprint, request, jsonify, send_file
+from reportlab.lib.pagesizes import letter, landscape, A3
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
 from io import BytesIO
+
 
 # Create a Flask Blueprint
 table_routes = Blueprint("table_routes", __name__)
@@ -51,27 +55,57 @@ def generate_table():
 @table_routes.route('/export-table', methods=['POST'])
 def export_table():
     try:
-        # Receive table data from frontend
         table_data = request.json
 
-        # Check if data exists
-        if not table_data:
+        if not table_data or len(table_data) == 0:
             return jsonify({"error": "No table data provided"}), 400
 
-        # Convert the data to a Pandas DataFrame
-        df = pd.DataFrame(table_data)
+        pdf_output = BytesIO()
+        pdf = SimpleDocTemplate(pdf_output, pagesize=A3)
+        elements = []
 
-        # Create an Excel file in memory
-        output = BytesIO()
-        with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
-            df.to_excel(writer, index=False, sheet_name='Table')
-            writer.save()
+        styles = getSampleStyleSheet()
+        
+        # **Ensure the correct column order**
+        column_order = ["Name", "Molecular Weight (g/mol)", "mmol", "Equivalents", 
+                        "Melting/Boiling Point", "Density", "Hazards"]
 
-        # Reset the file pointer to the beginning
-        output.seek(0)
+        # **Rearrange data based on this order**
+        data = [column_order]  # Add header row
+        for row in table_data:
+            formatted_row = [
+                Paragraph(str(row.get("Name", "N/A")), styles["BodyText"]),
+                Paragraph(str(row.get("Molecular Weight", "N/A")), styles["BodyText"]),
+                Paragraph(str(row.get("mmol", "0")), styles["BodyText"]),
+                Paragraph(str(row.get("Equivalents", "1")), styles["BodyText"]),
+                Paragraph(str(row.get("Melting Point/Boiling Point", "N/A")), styles["BodyText"]),
+                Paragraph(str(row.get("Density", "N/A")), styles["BodyText"]),
+                Paragraph(str(row.get("Hazards", "None")), styles["BodyText"])
+            ]
+            data.append(formatted_row)
 
-        # Send the Excel file to the user as a downlo
-        return send_file(output, download_name="table.xlsx", as_attachment=True)
+        # **Set consistent column widths**
+        col_widths = [120, 120, 60, 90, 150, 90, 180]  # Adjust width for each column
 
+        # **Create and style the table**
+        table = Table(data, colWidths=col_widths)
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.blue),  # Header background
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),  # Header text color
+            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),  # Center-align text
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),  # Bold headers
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 10),  # Padding for header
+            ('BACKGROUND', (0, 1), (-1, -1), colors.whitesmoke),  # Alternating row colors
+            ('GRID', (0, 0), (-1, -1), 1, colors.black),  # Grid lines
+            ('FONTSIZE', (0, 0), (-1, -1), 10)  # Font size
+        ]))
+
+        elements.append(table)
+        pdf.build(elements)
+        pdf_output.seek(0)
+
+        return send_file(pdf_output, download_name="chemical_table.pdf", as_attachment=True)
+    
     except Exception as e:
-        return jsonify({"error": f"An error occurred while exporting: {str(e)}"}), 500
+        print(f"Error generating PDF: {str(e)}")  # Debugging
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500

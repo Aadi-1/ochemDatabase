@@ -53,4 +53,18 @@
     background-color: #ccc;
     cursor: not-allowed;
   }
+
+  .download-table-button {
+    background-color: #006d77; /* Blue-green theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-table-button:hover {
+    background-color: #004c56; /* Darker shade on hover */
+  }
   

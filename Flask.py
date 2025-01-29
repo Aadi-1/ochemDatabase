@@ -46,12 +46,14 @@ db = client['ochemDB']
 collection = db['chemicals']
 
 
+
+
 #Get Route
 @app.route('/chemical/<query>', methods=['GET'])
 def get_chemical(query): 
     chemical = collection.find_one(
         {"$or": [
-            {"name": {"$regex": query, "$options": "i"}},
+            {"name": {"$regex": query, "$options": "i"}},  # Case-insensitive search
             {"formula": {"$regex": query, "$options": "i"}}
         ]},
         {"_id": 0}
@@ -76,7 +78,7 @@ def get_suggestions(query):
         "melting_boiling_point": 1,
         "hazards": 1,
     }
-).limit(7)
+).limit(15)
         suggestions = list(chemicals)  # Convert cursor to list
         return jsonify(suggestions), 200
     except Exception as e:

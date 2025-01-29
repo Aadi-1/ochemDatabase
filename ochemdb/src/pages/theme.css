@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #006d77; /* Blue-green */
+    --secondary-color: #83c5be; /* Lighter blue-green */
+    --background-color: #edf6f9; /* Light neutral background */
+    --text-color: #2a2a2a; /* Dark gray text */
+    --button-hover-color: #004c56; /* Darker blue-green for hover */
+  }
+  
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Headers */
+  h1, h2, h3, h4, h5, h6 {
+    color: var( --text-color);
+  }
