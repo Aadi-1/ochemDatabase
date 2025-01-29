@@ -13,18 +13,17 @@ table_routes = Blueprint("table_routes", __name__)
 @table_routes.route('/generate-table', methods=['POST', 'OPTIONS'])
 def generate_table():
     try:
-        print("Request method:", request.method)
+
         if request.method == "OPTIONS":
             print("Handling OPTIONS request")
             return jsonify({"message": "Preflight request successful"}), 200
 
         cart_data = request.json
-        print("Received cart data:", cart_data)
 
         # Extract the cart items from the JSON
         if not cart_data or 'cart' not in cart_data:
             print("No cart data provided")
-            return jsonify({"error": "No cart data provided"}), 400
+            return jsonify({"error": ")No cart data provided"}), 400
 
         items = cart_data['cart']  # Extract the list of cart items
 
@@ -42,8 +41,6 @@ def generate_table():
                 "Hazards": item.get("hazards", "None")
             })
 
-        print("Received cart data:", request.json)
-        print("Generated table:", table)
         return jsonify(table), 200
 
     except Exception as e:

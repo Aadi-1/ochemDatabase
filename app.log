@@ -1725,3 +1725,149 @@ werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Back
 werkzeug - INFO -  * Restarting with stat
 werkzeug - WARNING -  * Debugger is active!
 werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/Flask.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:21:57] "GET /chemical/suggestions/va HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:21:57] "GET /chemical/suggestions/van HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:21:57] "GET /chemical/suggestions/vani HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:21:59] "GET /chemical/Vanillin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:02] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:02] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:03] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:06] "GET /chemical/suggestions/br HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:06] "GET /chemical/suggestions/bri HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:06] "GET /chemical/suggestions/brin HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:06] "GET /chemical/suggestions/brine HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:06] "GET /chemical/brine HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:20] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:20] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:20] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:22:20] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:08] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:09] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:09] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:10] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:10] "GET /chemical/Acetonitrile HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:13] "GET /chemical/suggestions/acee HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:14] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:14] "GET /chemical/suggestions/acet HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:15] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:16] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:16] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:17] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:17] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:35] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:35] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:37] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:37] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:40] "OPTIONS /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 16:35:40] "POST /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:29] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:29] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:29] "GET /chemical/suggestions/acei HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:30] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:00:30] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:01:13] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:01:17] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:05:59] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:05:59] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:00] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:00] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:12] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:12] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:54] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:06:54] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:29] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:29] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:29] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:30] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:31] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:31] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:31] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:31] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:32] "OPTIONS /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:32] "POST /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:41] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:41] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:47] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:47] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:47] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:47] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:55] "OPTIONS /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:16:55] "POST /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:21:31] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:21:31] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:21:31] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:21:31] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:17] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:17] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:17] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:17] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:20] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:22:20] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:23:15] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:23:15] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:23:15] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:23:15] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:22] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:22] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:23] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:24] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:26] "OPTIONS /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:24:26] "POST /export-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:25:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:25:24] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:25:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:25:24] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:27:33] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:27:33] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:27:59] "GET /chemical/suggestions/ac HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:27:59] "GET /chemical/suggestions/ace HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:27:59] "GET /chemical/Acetic%20Acid HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:28:00] "GET /chemical/Acetone HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:28:01] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:28:01] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:28:01] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:28:01] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO -  * Detected change in '/Users/aadi/Desktop/Ochem Database Backend/ochemdb/table_routes.py', reloading
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 291-589-977
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:29:15] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:29:15] "OPTIONS /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:29:15] "POST /generate-table HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 19:29:15] "POST /generate-table HTTP/1.1" 200 -

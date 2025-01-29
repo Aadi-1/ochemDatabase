@@ -53,8 +53,8 @@ collection = db['chemicals']
 def get_chemical(query): 
     chemical = collection.find_one(
         {"$or": [
-            {"name": {"$regex": query, "$options": "i"}},  # Case-insensitive search
-            {"formula": {"$regex": query, "$options": "i"}}
+            {"name": {"$regex": f"^{query}$", "$options": "i"}},  # Exact, case-insensitive match
+            {"formula": {"$regex": f"^{query}$", "$options": "i"}}
         ]},
         {"_id": 0}
     )
@@ -64,6 +64,7 @@ def get_chemical(query):
     else:
         return jsonify({"error": "No Chemical Found"}), 404
     
+
 # Add the following route for suggestions
 @app.route('/chemical/suggestions/<query>', methods=['GET'])
 def get_suggestions(query):

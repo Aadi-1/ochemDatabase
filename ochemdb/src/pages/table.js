@@ -11,7 +11,7 @@ export default function TablePage() {
   // Fetch table data from backend
   const generateTable = async () => {
     if (cart.length === 0) {
-      alert("Cart is empty! Please add items to the cart.");
+      alert("table.jsCart is empty! Please add items to the cart.");
       return;
     }
     console.log("Table Data:", tableData);
@@ -71,9 +71,6 @@ export default function TablePage() {
 
   return (
     <div className="table-page">
-      <button onClick={generateTable} disabled={loading}>
-        {loading ? "Loading..." : "Generate Table"}
-      </button>
       {tableData.length > 0 && (
         <div>
           <table className="chemical-table">
