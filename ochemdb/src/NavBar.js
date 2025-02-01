@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useCart } from "./CartContext"; // Import cart context
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
   const { cart, removeFromCart } = useCart(); // Access cart data and remove functionality
@@ -48,21 +49,24 @@ export default function NavBar() {
   return (
     <>
       <nav className="nav">
-        <a href="/" className="site-title">
+        <Link to="/" className="site-title">
+          {" "}
+          {/* ✅ Use Link instead of <a> */}
           Ochem Database
-        </a>
+        </Link>
         <ul>
-          <CustomLink href="/about">About</CustomLink>
-          <CustomLink href="/instructions">Instructions</CustomLink>
-          <CustomLink href="/request">Request A Chemical</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/instructions">Instructions</CustomLink>
+          <CustomLink to="/request">Request A Chemical</CustomLink>
           <li>
-            <a
-              href="/table"
+            <Link
+              to="/table"
               onClick={handleTableClick}
               className="generate-table-btn"
             >
               Generate Table
-            </a>
+            </Link>{" "}
+            {/* ✅ Use Link instead of <a> */}
           </li>
         </ul>
 
@@ -112,13 +116,15 @@ export default function NavBar() {
   );
 }
 
-function CustomLink({ href, children, ...props }) {
-  const path = window.location.pathname;
+// ✅ Updated CustomLink component
+function CustomLink({ to, children, ...props }) {
+  const location = useLocation(); // ✅ Get current URL path
   return (
-    <li className={path === href ? "active" : ""}>
-      <a href={href} {...props}>
+    <li className={location.pathname === to ? "active" : ""}>
+      <Link to={to} {...props}>
         {children}
-      </a>
+      </Link>{" "}
+      {/* ✅ Use Link */}
     </li>
   );
 }
