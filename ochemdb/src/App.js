@@ -8,36 +8,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useCart } from "./CartContext";
 import table from "./pages/table.js";
 
-function Cart() {
-  const { cart, removeFromCart } = useCart();
-}
-
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home;
-      break;
-    case "/about":
-      Component = About;
-      break;
-    case "/instructions":
-      Component = Instructions;
-      break;
-    case "/request":
-      Component = RequestChemical;
-      break;
-    case "/table":
-      Component = table;
-  }
-
   return (
-    <>
+    <Router>
       <NavBar />
       <div className="container">
-        <Component />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/instructions" element={<Instructions />} />
+          <Route path="/request" element={<RequestChemical />} />
+          <Route path="/table" element={<table />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 

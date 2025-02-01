@@ -39,9 +39,12 @@ CORS(app)  # Enable CORS
 app.register_blueprint(table_routes, url_prefix="/api")
 
 # Serve React frontend
-@app.route("/")
-def serve_react():
-    return send_from_directory("build", "index.html")
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def serve_react(path):
+    if path != "" and os.path.exists(f"build/{path}"):
+        return send_from_directory("build", path)
+    return send_from_directory("build", "index.html")  # Always serve index.html
 
 # Serve static files (CSS, JS, Images)
 @app.route("/<path:path>")
