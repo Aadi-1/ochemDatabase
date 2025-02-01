@@ -20,7 +20,12 @@ from flask_cors import CORS
 
 from flask_mail import Mail, Message
 
-from table_routes import table_routes
+from backend.table_routes import table_routes
+
+from reportlab.lib.pagesizes import letter, landscape, A3
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
 
 
 
