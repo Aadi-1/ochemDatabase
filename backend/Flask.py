@@ -20,7 +20,7 @@ from flask_cors import CORS
 
 from flask_mail import Mail, Message
 
-from backend.table_routes import table_routes
+from table_routes import table_routes
 
 
 
