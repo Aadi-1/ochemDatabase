@@ -4,13 +4,13 @@ import About from "./pages/About";
 import Instructions from "./pages/Instructions";
 import RequestChemical from "./pages/RequestChemical";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useCart } from "./CartContext";
-import table from "./pages/table.js";
+import Table from "./pages/table.js";
 
 function App() {
   return (
-    <Router>
+    <>
       <NavBar />
       <div className="container">
         <Routes>
@@ -18,10 +18,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/instructions" element={<Instructions />} />
           <Route path="/request" element={<RequestChemical />} />
-          <Route path="/table" element={<table />} />
+          <Route path="/table" element={<Table />} />
         </Routes>
       </div>
-    </Router>
+    </>
   );
 }
 
