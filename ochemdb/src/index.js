@@ -10,18 +10,11 @@ import {
 } from "react-router-dom";
 import { CartProvider } from "./CartContext";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello World!</div>,
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <App />
       </BrowserRouter>
     </CartProvider>
