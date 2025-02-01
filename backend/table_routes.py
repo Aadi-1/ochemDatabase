@@ -26,7 +26,7 @@ def generate_table():
             return jsonify({"error": ")No cart data provided"}), 400
 
         items = cart_data['cart']  # Extract the list of cart items
-
+        print("Received Data:", cart_data)
         # Prepare the table with the required columns
         table = []
         for item in items:

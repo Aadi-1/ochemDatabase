@@ -48,7 +48,7 @@ def serve_react():
 def serve_static_files(path):
     return send_from_directory("ochemdb/public", path)
 
-app.register_blueprint(table_routes)
+
 
 #Creating log file
 logging.basicConfig(filename= 'app.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s')

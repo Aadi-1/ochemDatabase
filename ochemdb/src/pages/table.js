@@ -20,8 +20,9 @@ export default function TablePage() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/generate-table",
-        { cart }
+        "http://127.0.0.1:5000/api/generate-table", // Add `/api/`
+        { cart },
+        { headers: { "Content-Type": "application/json" } } // Ensure JSON format
       );
       setTableData(response.data);
     } catch (error) {
@@ -50,7 +51,7 @@ export default function TablePage() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/export-table",
+        "http://127.0.0.1:5000/api/export-table",
         tableData,
         { responseType: "blob" } // Ensure file response type
       );
