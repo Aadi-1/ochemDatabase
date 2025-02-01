@@ -32,7 +32,7 @@ from reportlab.lib import colors
 
 
 #Creating the FLASK app
-app = Flask(__name__, static_folder="ochemdb/public", static_url_path="")
+app = Flask(__name__, static_folder="build", static_url_path="")
 CORS(app)  # Enable CORS
 
 # Register API routes
@@ -41,12 +41,12 @@ app.register_blueprint(table_routes, url_prefix="/api")
 # Serve React frontend
 @app.route("/")
 def serve_react():
-    return send_from_directory("ochemdb/public", "index.html")
+    return send_from_directory("build", "index.html")
 
 # Serve static files (CSS, JS, Images)
 @app.route("/<path:path>")
 def serve_static_files(path):
-    return send_from_directory("ochemdb/public", path)
+    return send_from_directory("build", path)
 
 
 
@@ -179,4 +179,5 @@ print(app.url_map)
     
 #Running the app
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 locally
+    app.run(host="0.0.0.0", port=port)
